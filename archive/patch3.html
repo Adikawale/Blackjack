@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Patch 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="patch3.css">
+</head>
+
+<body>
+	<script src="deck.js"></script>
+	<header id="id03">
+		<div>
+			<span class="logo">
+				Share &nbsp&nbsp
+				<a padding-left: 7px; href="https://twitter.com/?lang=en"><img src="photos\twitter.jpg" alt="tweet"></a>
+				<a padding-left: 7px; href="https://www.facebook.com/"><img src="photos\Fb.jpg" alt="facebook"></a>
+				<a padding-left: 7px; href="https://www.instagram.com/"><img src="photos\instagram.jpg" alt="insta"></a>
+				<a padding-left: 7px; href="https://www.whatsapp.com/\"><img src="photos\WhatsApp.jpg"
+						alt="Whatsapp"></a>
+			</span>
+
+			<span class="position1">
+				<button class="button" onclick="document.getElementById('id01').style.display='block'"
+					style="width:auto; color: red;"> Login </button>
+				<button class="button" onclick="document.getElementById('id02').style.display='block'"
+					style="width:auto; color: red;"> Register</button>
+			</span>
+
+	</header>
+	<nav>
+		<!--contain navigation keys -->
+		<ul>
+			<!--navigation elements -->
+			<li>HOME</li>
+			<li>ABOUT US</li>
+			<li>RULES</li>
+			<li>CONTACT</li>
+
+
+		</ul>
+	</nav>
+	<div class="game-window">
+		<div class="game-part">
+			<Button onclick="this.style.visibility='hidden'; startGame()" id="game" class="play">PLAY</Button>
+
+			<div>
+				<div id=dealerSide1> </div>
+				<div id=dealerSide2> </div>
+				<div id=dealerSide3> </div>
+				<div id=dealerSide4> </div>
+				<div id=dealerSide5> </div>
+				<div id=dealerSide6> </div>
+			</div>
+
+			<button onclick="playerTurn()" id="hit" value="HIT" disabled>HIT</button>
+			<button onclick="playerStand()" id="stand" value="STAND" disabled>STAND</button>
+
+			<div>
+				<div id=playerSide1> </div>
+				<div id=playerSide2> </div>
+				<div id=playerSide3> </div>
+				<div id=playerSide4> </div>
+				<div id=playerSide5> </div>
+				<div id=playerSide6> </div>
+			</div>
+
+		</div>
+		<br><br><br><br><br><br>
+	</div>
+
+	<section class="section" id="id05">
+		<div>
+			<span class="rulesnav , position2 , rborder">
+				<ul>
+					<li><u>Cards Rules</u></li>
+					<li><u>Hitting Rules</u></li>
+					<li><u>standing Rules</u></li>
+					<li><u>surrender</u></li>
+				</ul>
+			</span>
+			<span class="rules">
+				<h2>THE BASIC RULES WHEN PLAYING BLACKJACK:</h2>
+				<p> </p>
+				<ol>
+					<li>
+						<p>Blackjack starts with players making bets.</p>
+					</li>
+					<li>
+						<p>Dealer deals 2 cards to the players and two to himself (1 card face up, the other face down).
+						</p>
+					</li>
+					<li>
+						<p>Blackjack card values: All cards count their face value in blackjack. Picture cards count as
+							10 and the ace<br> can count as either 1 or 11. Card suits have no meaning in blackjack. The
+							total of any hand is the sum of the card values in the hand</p>
+					</li>
+					<li>
+						<p>Players must decide whether to stand, hit, surrender, double down, or split.</p>
+					</li>
+					<li>
+						<p>The dealer acts last and must hit on 16 or less and stand on 17 through 21.</p>
+					</li>
+					<li>
+						<p>Players win when their hand totals higher than dealer's hand, or they have 21 or less when
+							the dealer busts<br> (i.e., exceeds 21)</p>
+					</li>
+				</ol>
+			</span>
+
+			<span class="rules">
+				<h1>Card Rules</h1>
+
+
+				<p class=>All cards count their face value in blackjack. Picture cards count as 10
+					and the ace can count as either 1 or 11.<br> Card suits have no meaning in blackjack.
+					The total of any hand is the sum of the card values in the hand. A hand<br> containing a 4-5-8
+					totals 17.
+					Another containing a queen-5 totals 15. It is always assumed that the ace counts as<br> 11 unless so
+					doing
+					would make your hand total exceed 21, in which case the ace reverts to a value of 1.</p>
+
+			</span>
+
+			<span class="rules">
+				<h1>Hitting Rules</h1>
+
+				<p>This means you want the dealer to give another card to your hand. In shoe games,
+					indicate to the dealer that you<br> want a hit by making a beckoning motion with your finger
+					or tapping the table behind your cards with your finger.<br> In hand-held games, scratch the
+					edges of the cards in your hand lightly on the felt </p>
+			</span>
+
+			<span class="rules">
+				<h1>Standing Rules</h1>
+
+				<p>This means you are satisfied with the total of the hand and want to stand with the
+					cards you have. In shoe games,<br> indicate that you want to stand by waving your hand
+					over the cards, palm down. In hand-held games, tuck your<br> cards under the chips that
+					you have in the betting box.</p>
+			</span>
+
+			<span class="rules">
+				<h1>Surrender</h1>
+
+				<p>This playing option is sometimes permitted. It allows a player to forfeit the hand
+					immediately with an automatic<br> loss of half the original bet. In most venues, players
+					can surrender their initial two-card hand only after the dealer has<br> checked his cards and
+					ascertained that he doesn't have a blackjack (known as late surrender). Once a
+					player draws a card,<br> the surrender option is no longer available. If the dealer has
+					a blackjack hand, then surrender is not available.</p>
+			</span>
+
+	</section>
+	<section class="section">
+
+	</section>
+
+	<div id="id01" class="modal">
+
+		<form class="model-content" action="" method="POST">
+			<img src="WebPhotos\card.jpg" alt="logo" class="profile">
+			<div class="close-sign">
+				<span class="close">
+					&times;
+				</span> </div>
+
+
+
+			<div>
+				<label for="uname"> Username</label><br>
+				<input type="text" placeholder="Enter Username" name="uname" required><br><br>
+				<label for="password"> Password</label><br>
+				<input type="password" placeholder="Enter your password" name="password" required><br><br>
+			</div>
+			<button type="submit" class="loginbtn"> Login </button>
+			<button type="button" class="cancelbtn">cancel </button><br>
+		</form>
+	</div>
+	<div id="id02" class="modal">
+
+		<form class="model-content" action="" method="POST">
+
+			<div class="close-sign">
+				<span class="close">
+					&times;
+				</span> </div>
+
+
+
+			<div>
+				<label for="uname"> Username</label><br>
+				<input type="text" placeholder="Enter Username" name="uname" required><br><br>
+				<label for="password"> Password</label><br>
+				<input type="password" placeholder="Enter your password" name="password" required><br><br>
+			</div>
+			<button type="submit" class="loginbtn"> Login </button>
+			<button type="button" class="cancelbtn">cancel </button><br>
+		</form>
+	</div>
+
+	<section>
+		<footer>
+			<p>Contact information:</p>
+			<a href="mailto:kanishkkargutkar123@gmail.com">someone@example.com</a> |
+			<a href="mailto:marathegaurav364@gmail.com">someone@example.com</a> |
+			<a href="mailto:kawaleaditya870@gmail.com">someone@example.com</a> |
+			<a href="mailto:mishradhruv072@gmail.com">someone@example.com</a>
+			<p></p>
+		</footer>
+	</section>
+
+	<script>
+		var modal1 = document.getElementById('id01');
+		var modal2 = document.getElementById('id02');
+		var nav1 = document.getElementById('id05');
+	</script>
+
+	</div>
+</body>
+
+</html>

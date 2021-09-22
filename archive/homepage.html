@@ -1,0 +1,153 @@
+<HTML>
+<STYLE>
+    #dealerSide1 {
+        background-color: yellow;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        top: 100px;
+        left: 100px;
+    }
+
+    #dealerSide2 {
+        background-color: yellow;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 200px;
+    }
+
+    #dealerSide3 {
+        background-color: yellow;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 300px;
+        top: -100px;
+    }
+
+    #dealerSide4 {
+        background-color: yellow;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 400px;
+        top: -200px;
+    }
+
+    #dealerSide5 {
+        background-color: yellow;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 500px;
+        top: -300px;
+    }
+
+    #dealerSide6 {
+        background-color: yellow;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 600px;
+        top: -400px;
+    }
+
+    #playerSide1 {
+        background-color: green;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        top: 100px;
+        left: 100px;
+    }
+
+    #playerSide2 {
+        background-color: green;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 200px;
+    }
+
+    #playerSide3 {
+        background-color: green;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 300px;
+        top: -100px;
+    }
+
+    #playerSide4 {
+        background-color: green;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 400px;
+        top: -200px;
+    }
+
+    #playerSide5 {
+        background-color: green;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 500px;
+        top: -300px;
+    }
+
+    #playerSide6 {
+        background-color: green;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        left: 600px;
+        top: -400px;
+    }
+
+    #victory {
+        background-color: lightblue;
+        position: relative;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</STYLE>
+
+<BODY>
+    <script src="deck.js"></script>
+    <FORM>
+        <input type="button" onclick="this.style.visibility='hidden'; startGame()" id="game" value="START">
+        <div>
+            <div>
+                <div id=dealerSide1> </div>
+                <div id=dealerSide2> </div>
+                <div id=dealerSide3> </div>
+                <div id=dealerSide4> </div>
+                <div id=dealerSide5> </div>
+                <div id=dealerSide6> </div>
+            </div>
+            <div id="gameButtons">
+                <input type="button" onclick="playerTurn()" id="hit" value="HIT" disabled>
+                <input type="button" onclick="playerStand()" id="stand" value="STAND" disabled>
+            </div>
+            <div>
+                <div id=playerSide1> </div>
+                <div id=playerSide2> </div>
+                <div id=playerSide3> </div>
+                <div id=playerSide4> </div>
+                <div id=playerSide5> </div>
+                <div id=playerSide6> </div>
+
+            </div>
+            <div>
+                <div id=victory>&nbsp</div>
+            </div>
+        </div>
+    </FORM>
+</BODY>
+
+</HTML>

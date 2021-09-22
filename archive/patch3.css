@@ -1,0 +1,379 @@
+body
+
+/*Body style*/
+    {
+
+    background-color: darkgoldenrod;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+
+header {
+
+    color: black;
+    background-color: red;
+    opacity: 0.7;
+
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(8, 39, 141);
+    padding: 5px 12px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+/*
+button
+{
+	font-size: 22px;
+    color: red;
+} */
+
+.position1 {
+
+    padding-left: 900px;
+    font-size: 20px;
+}
+
+.logo {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    padding-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+div {
+    color: white;
+}
+
+
+nav {
+    position: sticky;
+    top: 0px;
+    color: yellow;
+    background-image: url('WebPhotos\\Navpic.jpg');
+    opacity: 1;
+
+
+
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 75px;
+    padding-right: 40px;
+    line-height: 35px;
+}
+
+nav ul {
+    text-align: center;
+
+}
+
+nav ul li {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 75px;
+    line-height: 60px;
+    padding-right: 75px;
+}
+
+nav ul li:hover {
+    border-color: red;
+    background-color: rgb(221, 221, 206);
+    color: teal;
+
+}
+
+.game-part {
+    background-color: rgb(42, 100, 182);
+    position: relative; /*relative*/
+    top: 70px;
+    left: 250px;
+    width: 500px;
+    height: 500px;
+    border-radius: 4%;
+
+}
+
+.play {
+    background-color: yellow;
+    padding: 10px 40px;
+    border-style: double;
+    border-color: tomato;
+    border-width: 5px;
+    font-size: 24px;
+    margin: 35% 42%;
+    cursor: pointer;
+}
+
+/*Rules*/
+.section {
+    background-color: coral;
+    width: 100%;
+    height: 200%;
+
+
+}
+
+
+.rules {
+    display: block;
+    width: 70%;
+    height: 50%;
+    margin-left: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.rulesnav {
+
+    display: block;
+    float: right;
+    margin: 200px 100px;
+    padding: 10px;
+    font-size: 24px;
+    color: blue;
+}
+
+.position2 {
+
+    position: sticky;
+    top: 50%;
+}
+
+.rborder {
+    border-style: ridge;
+    border-radius: 5%;
+    border-color: lawngreen;
+
+}
+
+/* Login */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.4);
+
+}
+
+.model-content {
+    border-radius: 10px;
+    width: 25%;
+    height: 80%;
+    background-image: url('WebPhotos\\loginbg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.close-sign {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.close {
+    font-size: 40px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.profile {
+    border: none;
+    margin: 12% 10%;
+    border-radius: 10%;
+    width: 25%;
+
+}
+
+label {
+    font-size: 24px;
+    padding: 12px 20px;
+}
+
+input[type=text],
+input[type=password] {
+    background-color: rgba(192, 92, 11, 0.281);
+    font-size: 14px;
+    width: 80%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-left: 4%;
+}
+
+.loginbtn {
+    background-color: saddlebrown;
+    font-size: 20px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+}
+
+.cancelbtn {
+    background-color: saddlebrown;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+}
+
+.cards {
+    max-width: 100%;
+    max-height: 100%;
+}
+#dealerSide1 {
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    left: 100px;
+}
+
+#dealerSide2 {
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 200px;
+}
+
+#dealerSide3 {
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 300px;
+    top: -100px;
+}
+
+#dealerSide4 {
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 400px;
+    top: -200px;
+}
+
+#dealerSide5 {
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 500px;
+    top: -300px;
+}
+
+#dealerSide6 {
+    background-color: yellow;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 600px;
+    top: -400px;
+}
+
+#playerSide1 {
+    background-color: green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    left: 100px;
+}
+
+#playerSide2 {
+    background-color: green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 200px;
+}
+
+#playerSide3 {
+    background-color: green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 300px;
+    top: -100px;
+}
+
+#playerSide4 {
+    background-color: green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 400px;
+    top: -200px;
+}
+
+#playerSide5 {
+    background-color: green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 500px;
+    top: -300px;
+}
+
+#playerSide6 {
+    background-color: green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 600px;
+    top: -400px;
+}
+#victory {
+    background-color: lightblue;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}

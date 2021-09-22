@@ -1,0 +1,494 @@
+    @font-face {
+        /*https://famfonts.com/games/red-dead-redemption*/
+        font-family: "RedDead";
+        src: url("fonts/CHINESER.TTF");
+    }
+
+    @font-face {
+        /*https://www.fontspace.com/category/retro*/
+        font-family: "Remachine";
+        src: url("fonts/Chelsea.TTF");
+    }
+
+    @font-face {
+        /*https://www.fontspace.com/category/retro*/
+        font-family: "Login";
+        src: url("fonts/RioGrande.TTF");
+    }
+
+    @font-face {
+        /*https://www.fontspace.com/category/retro*/
+        font-family: "crule";
+        src: url("fonts/Ranchers.TTF");
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-image: url("WebPhotos\\mess_bg1.jpg");
+        background-attachment: fixed;
+        font-family: "RedDead", Arial;
+    }
+
+    body::-webkit-scrollbar {
+        width: 7px;
+        /* width of the entire scrollbar */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-image: url("WebPhotos\\scroll.png");
+        background-repeat: no-repeat;
+        border-radius: 100%;
+    }
+
+    .navbar li,
+    a,
+    button {
+        font-family: "RedDead", Arial;
+        font-weight: 500;
+        font-size: 30px;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    .nav_bar {
+        position: -webkit-sticky;
+        /* Safari */
+        position: relative;
+        top: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 3%;
+        position: relative;
+    }
+
+    .logo {
+        position: relative;
+        left: 1%;
+        width: 20vw;
+        height: 20vh;
+        cursor: pointer;
+    }
+
+    nav {
+        order: 1;
+
+    }
+
+    .nav_links {
+        list-style: none;
+    }
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+        color: rgba(204, 0, 0, .75);
+    }
+
+    .cta {
+        order: 3;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .list-login {
+        padding-left: 100px;
+    }
+
+    .login {
+        padding: 9px 25px;
+        background-color: rgba(204, 0, 0, .75);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+    }
+
+    button {
+        /*Default button, change to class name*/
+        padding: 9px 25px;
+        background-color: rgba(204, 0, 0, .75);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    button:hover {
+        color: white;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        padding-top: 60px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0, 0.4);
+    }
+
+    .model-content {
+        font-family: "Login", Arial;
+        border-radius: 10px;
+        width: 25%;
+        height: 80%;
+        background-image: url('WebPhotos\\login1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+    }
+
+    .victory_label {
+        font-family: "RedDead", Arial;
+    }
+
+    .logclose {
+        /*new class*/
+        font-size: 60px;
+        position: absolute;
+        right: 2%;
+        top: -10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .logclose:hover,
+    .logclose:focus {
+        cursor: pointer;
+        color: red;
+    }
+
+    .close-sign {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+
+    .close {
+        font-size: 60px;
+        position: absolute;
+        right: 20%;
+        top: -10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        cursor: pointer;
+        color: red;
+    }
+
+    .profile {
+        position: relative;
+        left: 45px;
+        top: 20px;
+        border: none;
+        margin: 12% 10%;
+        border-radius: 10%;
+        width: 50%;
+    }
+
+    label {
+        font-size: 24px;
+        padding: 12px 20px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        background-color: rgba(192, 92, 11, 0.281);
+        font-size: 14px;
+        width: 80%;
+        padding: 12px 20px;
+        margin-top: 8px;
+        margin-left: 4%;
+    }
+
+    .loginbtn {
+        background-color: saddlebrown;
+        font-size: 20px;
+        position: relative;
+        left: 4%;
+        top: 20px;
+    }
+
+    .cancelbtn {
+        background-color: saddlebrown;
+        font-size: 20px;
+        position: relative;
+        left: 30%;
+        top: 20px;
+    }
+
+    .regi-position {
+        color: red;
+        font-size: 20px;
+        position: relative;
+        left: 55%;
+        top: -30px;
+
+
+    }
+
+    .regi-position:hover {
+        color: rgb(71, 14, 14);
+        cursor: pointer;
+
+
+    }
+
+    .game_space {
+        background-image: url("WebPhotos\\table_bg1.png");
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        vertical-align: top;
+        object-fit: contain;
+        position: relative;
+        display: flex;
+    }
+
+    .game_part {
+        position: relative;
+        align-content: center;
+        left: 50%;
+        top: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+
+    .play {
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .action {
+        visibility: hidden;
+        border-radius: 5px;
+        display: relative;
+    }
+
+    .retry {
+        visibility: hidden;
+    }
+
+    .section {
+        background-color: coral;
+        width: 100%;
+        height: 200%;
+    }
+
+    .rules {
+        font-family: "Remachine", Arial;
+        display: block;
+        width: 70%;
+        height: 50%;
+        margin-left: 24px;
+        color: white;
+        font-size: 24px;
+    }
+
+    .rulesnav {
+        background-image: url('WebPhotos\\vintage_bg2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        float: right;
+        margin: 5% 6%;
+        padding: 10px 25px;
+        font-size: 28px;
+        color: blue;
+    }
+
+    .rules_modal {
+        font-family: "RedDead", Arial;
+    }
+
+    .myhover {
+        cursor: pointer;
+        color: yellow;
+    }
+
+    .position2 {
+
+        position: sticky;
+        top: 50%;
+    }
+
+    .rborder {
+        border-style: ridge;
+        border-radius: 5%;
+        border-color: black;
+    }
+
+    .rkeys {
+        color: rgb(82, 8, 8);
+        cursor: pointer;
+    }
+
+    .cards-rules {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        padding-top: 60px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0, 0.4);
+
+    }
+
+    .cardhead {
+        position: absolute;
+        left: 17%;
+    }
+
+    .cards-rules-content {
+        font-family: "crule", Arial;
+        font-weight: 200px;
+        border-radius: 10px;
+        width: 85%;
+        height: 85%;
+        background-image: url('WebPhotos\\crule.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+    }
+
+    .content {
+        position: relative;
+        font-family: "crule", Arial;
+        font-size: 24px;
+        left: 10%;
+        top: 70px;
+        display: block;
+        width: 70vw;
+    }
+
+    .rules_img {
+        position: relative;
+        left: 45px;
+        top: 0px;
+        border: none;
+        margin: 2% 1%;
+        border-radius: 10%;
+        width: 20%;
+    }
+
+    .foot {
+        align-items: center;
+        background-image: url("WebPhotos/footer_stars.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        height: 35%;
+        width: 100%;
+    }
+
+    .footer-a {
+
+        font-family: unset;
+        font-size: 20px;
+    }
+
+    .share {
+        font-family: "RedDead", Arial;
+        color: white;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        left: 44%;
+
+    }
+
+    .share_icon {
+        display: inline-block;
+        position: relative;
+        left: 35%;
+
+    }
+
+    .bets {
+        visibility: visible;
+    }
+
+    .bets_label {
+        font-family: "RedDead", Arial;
+        font-size: 32px;
+
+    }
+
+    .bets_area {
+        position: absolute;
+        float: left;
+        left: 40vw;
+    }
+
+    .bets_area_remove {
+        position: absolute;
+        float: right;
+        right: 65vw
+    }
+
+    /*Game section*/
+    .dCards {
+        /*background-color: yellow;*/
+        position: relative;
+        height: 15vh;
+        width: 5vw;
+        top: -35vh;
+        left: -33%;
+        margin: 10px;
+        float: left;
+    }
+
+    .pCards {
+        /*background-color: green;*/
+        position: relative;
+        height: 15vh;
+        width: 5vw;
+        top: -2vh;
+        left: -33%;
+        float: left;
+        margin: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }

@@ -1,0 +1,153 @@
+   
+body /*Body style*/
+{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+   background-image: url("blackjack7.jpg");
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: repeat;
+
+}
+/*@font-face {
+  font-family: myFirstFont;
+  src: url(https://fonts.google.com/specimen/Work+Sans);
+}*/
+header 
+{
+   /* background-image: url("blackjack.jpg");*/
+   background-color: white;
+   background:rgba(255,255,255,0.1);
+}
+.logo
+{
+    color: white;
+   
+    display: inline-block;
+    padding: 10px;
+    padding-left: 200px;
+}
+.logo img
+{
+    height: 100px;
+    width: 100px;
+    
+}
+.fonts
+{
+    
+    vertical-align: top; 
+    display: inline-block;
+    position: relative;
+    padding-left: 300px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    align-items:center;
+    font-size: 50px;
+    font-weight: bold;
+   /* color: aliceblue;*/
+   font-family: 'Dancing Script', cursive;
+
+}
+.fonts span
+{
+	
+	margin: 0;
+	padding: 5;
+	animation: animate 2.75s linear infinite;
+}
+span:nth-child(1){animation-delay: 0s;}
+span:nth-child(2){animation-delay: 0.25s;}
+span:nth-child(3){animation-delay: 0.5s;}
+span:nth-child(4){animation-delay: 0.75s;}
+span:nth-child(5){animation-delay: 1s;}
+span:nth-child(6){animation-delay: 1.25s;}
+span:nth-child(7){animation-delay: 1.5s;}
+span:nth-child(8){animation-delay: 1.75s;}
+span:nth-child(9){animation-delay: 2s;}
+
+@keyframes animate
+{
+	0%,100%
+	{
+		color: #fff;
+		filter: blur(2px);
+		text-shadow: 0 0 10px#39FF14,
+					0 0 20px #39FF14,
+					0 0 40px #39FF14,
+					0 0 80px #39FF14,
+					0 0 120px #39FF14,
+					0 0 200px #39FF14,
+					0 0 300px #39FF14,
+					0 0 400px #39FF14;
+
+	}
+	5%,95%
+	{
+		color: #111;
+		filter: blur(0px);
+		text-shadow:  none;
+	}
+}
+
+nav 
+{
+
+background-color: rgb(87, 3, 3);
+position: sticky;
+top: 10;
+
+
+
+}
+
+nav ul
+{
+text-align: center;
+
+}
+
+nav ul li
+{
+    
+    display: inline-block;
+/* */
+    color: white;
+    line-height: 50px;
+    padding-right:  115px;
+  /* font-family: 'Bangers', cursive;*/
+ /* font-family: 'Hind Madurai', sans-serif;*/
+ font-family: 'Dancing Script', cursive;
+
+
+}
+
+nav ul li:hover
+{
+    color: white;
+    text-shadow: 0px 0px 3px white;
+}
+
+.gamebody
+{
+    width: 98%;
+    height: 480px;
+    padding-left: 20px;
+    overflow: hidden;
+
+}
+.gamebody img
+{
+    width: 98%;
+    height: 480px;
+}
+.gamespace
+{
+    width: 70%;
+    height: 280px;
+    padding-left: 50px;
+    overflow: hidden;
+}
